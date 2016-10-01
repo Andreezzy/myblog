@@ -1,3 +1,4 @@
 <% if user_signed_in? %>
 	<h1>Bienvenido <%= current_user.email %></h1>
+  <button><%= link_to "Crear Post", new_article_path %></button>
 <% end %>
