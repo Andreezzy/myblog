@@ -1,0 +1,60 @@
+html, body{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a,a:visited{
+	//color: inherit !important;
+	color: inherit;
+	text-decoration: none;
+}
+
+.btn{
+	background-color: inherit;
+	border: none;
+	outile: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 1.2em;
+	padding: 10 12px;
+}
+
+#logo{
+	font-size: 1.2em;
+}
+
+.no-margin{
+	margin: 0px;
+}
+.red{
+	background-color: #E74C3C !important;
+}
+.be-red{
+	background-color: #E74C3C;
+}
+.white{
+	color: #ECF0F1;
+}
+.large-padding{
+	padding: 8px 5px;
+}
+ul{
+	list-style: none;
+ 	margin: 20px;
+}
+.field,.top-space,.actions{
+	margin-top: 1em;
+}
+
+.text-left{
+	text-align: left;
+}
+.form-control{
+	border: none;
+	border-bottom: 1px solid;
+	outline: none;
+	width: 100%;
+	display: block;
+	padding: 10px 0px;
+	font-size: 1.2em;
+}
