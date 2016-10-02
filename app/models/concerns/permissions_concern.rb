@@ -5,7 +5,8 @@ module PermissionsConcern
   end
 
   def is_editor?
-    self.permission_level >= 2
+    #self.permission_level >= 2
+    self.permission_level >= 1
   end
 
   def is_admin?
