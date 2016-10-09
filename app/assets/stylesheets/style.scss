@@ -26,6 +26,9 @@ a,a:visited{
 .no-margin{
 	margin: 0px;
 }
+.text-center{
+  text-align: center;
+}
 .red{
 	color: #E74C3C !important;
 }
@@ -48,9 +51,21 @@ ul{
 .field,.top-space,.actions{
 	margin-top: 1em;
 }
-
+.background-cover{
+  background-position: center;
+  background-size: cover;
+}
 .text-left{
 	text-align: left;
+}
+.article-height{
+  height:150px;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
 }
 .form-control{
 	border: none;

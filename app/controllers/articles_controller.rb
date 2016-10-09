@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   def index
     #@articles = Article.all
     #@articles = Article.publicados.ultimos
-    @articles = Article.paginate(page: params[:page], per_page: 5).publicados.ultimos
+    @articles = Article.paginate(page: params[:page], per_page: 10).publicados.ultimos
   end
 
   # GET "/articles/:id"
@@ -66,7 +66,7 @@ class ArticlesController < ApplicationController
     redirect_to new_user_session_path, notice: "Necesitas iniciar sesion"
   end
   def article_params
-    params.require(:article).permit(:title, :body, :cover, :categories)
+    params.require(:article).permit(:title, :body, :cover, :categories, :markup_body)
   end
 
 end

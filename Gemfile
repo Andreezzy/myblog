@@ -32,6 +32,10 @@ gem 'paperclip'
 gem 'aasm'
 # Para la paginacion
 gem 'will_paginate'
+# Markup Editor
+gem 'epic-editor-rails'
+# Limpiar html
+gem 'sanitize'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development

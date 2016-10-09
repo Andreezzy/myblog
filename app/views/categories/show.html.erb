@@ -1,13 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class="container" style="margin:0 auto;">
+  <p id="notice"><%= notice %></p>
 
-<h1 style="color: <%= @category.color %>"><%= @category.name %></h1>
-<h2>Articulos</h2>
-<% @category.articles.each do |article| %>
-  <h3><%= link_to article.title, article %></h3>
-  <div>
-    <%= article.body %> - <%= link_to "Eliminar", article, class: "red", method: :delete %>
+  <h1 style="color: <%= @category.color %>"><%= @category.name %></h1>
+  <div class="row">
+    <%= render @category.articles %>
   </div>
-<% end %>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+  <%= link_to 'Edit', edit_category_path(@category) %> |
+  <%= link_to 'Back', categories_path %>
+</div>
